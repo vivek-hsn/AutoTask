@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.myauto.test.TestScript">
+        <methods>
+          <include name="mytest1"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="starting"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.myauto.test.TestScript -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

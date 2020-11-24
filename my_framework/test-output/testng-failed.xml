@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.myauto.reports.MyListnerReport"/>
+  </listeners>
+  <test thread-count="2" name="FireFox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.myauto.test.TestScript">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="flushReport"/>
+          <include name="mytest"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="starting"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.myauto.test.TestScript -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
